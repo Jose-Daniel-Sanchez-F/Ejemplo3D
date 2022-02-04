@@ -35,10 +35,12 @@ namespace Ejemplo3D
              //System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(labelNombre.Text);
 
             labelDPI.Text = "El No.de DPI es: "+ persona.Dpi.Trim();
-            labelNombre.Text = "Nombre: " + System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(persona.Nombre).Trim();
-            labelApellido.Text = "Apellidos: "+System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(persona.Apellido).Trim();
+            labelNombre.Text = "Nombre: " + 
+                System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(persona.Nombre).Trim();
+            labelApellido.Text = "Apellidos: "+
+                System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(persona.Apellido).Trim();
             labelTelefono.Text = "No. de celular: "+persona.Telefono.Trim();
-           // labelFechaNacimiento.Text = persona.FechaNacimiento.ToString();
+            //labelFechaNacimiento.Text = persona.FechaNacimiento.ToString();
             label1Edad.Visible = true;  
             //persona.edad().ToString();
             label7.Visible = true;  

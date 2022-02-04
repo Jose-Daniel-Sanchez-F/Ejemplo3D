@@ -19,17 +19,24 @@ namespace Ejemplo3D
 
                                                  //Métodos:
 
-        /*public int edad()
+        public int edad()
         {
-              
-            DateTime fechaActual = DateTime.Today;
-            int edad = fechaActual.Year - dateTimePicker1.Value.Year;
-            if (fechaActual < dateTimePicker1.Value.AddYears(edad)) edad--;
-            label1Edad.Text = "Tienes " + edad.ToString() + " años";
-          
+            /*
+          DateTime hoy = DateTime.Now;
+          int edad = hoy.Year - FechaNacimiento.Year;
+          if (FechaNacimiento.Month > hoy.Month) 
+              edad--;
+          */
+            /*DateTime hoy = DateTime.Now;
 
-            return(0);                                                                                              
-        }*/
+            TimeSpan intervalo = hoy - FechaNacimiento;
+            int anos = (intervalo.Days / 365);
+            */
+            return (0);
+           
+        }
+
+       
 
     }
 }
