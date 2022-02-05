@@ -35,10 +35,26 @@ namespace Ejemplo3D
              //System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(labelNombre.Text);
 
             labelDPI.Text = "El No.de DPI es: "+ persona.Dpi.Trim();
-            labelNombre.Text = "Nombre: " + 
-                System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(persona.Nombre).Trim();
+            labelNombre.Text = "Nombre: " +
+                System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(persona.Nombre).Trim()
+                .Replace("!", "").Replace("#", "").Replace("$", "").Replace("%", "").Replace("/", "")
+                .Replace("(", "").Replace(")", "").Replace("=", "").Replace("?", "").Replace("¡", "")
+                .Replace("¿", "").Replace("+", "").Replace("*", "").Replace("}", "").Replace("]", "")
+                .Replace("{", "").Replace("[", "").Replace(",", "").Replace(";", "").Replace(".", "")
+                .Replace(":", "").Replace("-", "").Replace("_", "").Replace("<", "").Replace(">", "")
+                .Replace("°", "").Replace("|", "");
+
+
+
+
             labelApellido.Text = "Apellidos: "+
-                System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(persona.Apellido).Trim();
+                System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(persona.Apellido).Trim()
+                .Replace("!", "").Replace("#", "").Replace("$", "").Replace("%", "").Replace("/", "")
+                .Replace("(", "").Replace(")", "").Replace("=", "").Replace("?", "").Replace("¡", "")
+                .Replace("¿", "").Replace("+", "").Replace("*", "").Replace("}", "").Replace("]", "")
+                .Replace("{", "").Replace("[", "").Replace(",", "").Replace(";", "").Replace(".", "")
+                .Replace(":", "").Replace("-", "").Replace("_", "").Replace("<", "").Replace(">", "")
+                .Replace("°", "").Replace("|", "");
             labelTelefono.Text = "No. de celular: "+persona.Telefono.Trim();
             //labelFechaNacimiento.Text = persona.FechaNacimiento.ToString();
             label1Edad.Visible = true;  
